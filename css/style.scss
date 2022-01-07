@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Cutive&family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+    --yellow: #d28a05;
+    --black:#000;
+    --font-one: 'Cutive',sans-serif;
+    --font-two:'Averia Libre';
+}
+
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+    box-shadow: $x-axis $y-axis $blur $color;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--yellow);
+    font-family: var(--font-one);
+}
+
+.sm-text{
+    font-size: 12px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/hero/hero-3.jpg");
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:scroll;
+    height: 100vh;
+}
+h1{
+    font-size: 40px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.logo{
+    height: 60px;
+}
+
+.feathers-icon{
+    color: var(--black);
+    height: 17px;
+    stroke: var(--black);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.logo img{
+    height: inherit;
+}
+
+.navigation{
+    padding-top: 15px;
+}
+
+.navigation a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero{
+    padding: 80px;
+    text-align: center;
+}
+
+.btn{
+    padding: 8px;
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.hero h1{
+    margin-top: 13%;
+}
+
+.section{
+    min-height: 500px;
+    padding: 5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin:auto 10%;
+    padding-bottom: 50px;
+
+}
+.section-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    padding: 0 10px;
+}
+
+.section-title h3{
+    font-size: 30px;
+    color: var(--black);
+    font-weight: bold;
+    border-bottom: 5px solid var(--yellow);
+    padding: 0 0 .5rem 0;
+}
+.feature{
+    width: 33%;
+    text-align: center;
+    border: 1px solid rgba(7, 24, 46, 0.1);
+    padding-bottom: 10px;
+    margin:0 10px   
+}
+.feature:hover{
+    @include box-shadow(5px, 5px, 5px, rgba(131, 128, 128, 0.212))
+}
+.feature-head{
+    margin-top: 10px;
+}
+.feature-head h3{
+    font-family: var(--font-two);
+}
+.feature-item{
+    padding: 20px;
+}
+.feature-item p{
+    font-size: 12px;
+    color: var(--black);
+}
+.recent-projects{
+    border-top: 1px solid rgba(7, 24, 46, 0.1);
+    background-color:var(--black);
+
+   h3{
+        color: white;
+    }
+    .section-title{
+        margin-bottom: 40px;
+    }
+}
+.project-list{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(7, 24, 46, 0.8);
+    margin-bottom: 20px;
+    background-color: #80808038;
+    border-radius: 0px 10px 0px 0px;
+    overflow: hidden;
+
+    .project-image{
+        height: 180px;
+        background-color: yellow;
+        width: 180px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h5{
+            color: white;
+            font-weight: normal;
+            background-color: rgba(0,0,0,0.9);
+            padding: 10px;
+            border: 1px solid white;
+        }
+    }
+    .pentesting{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/projects/pentesting.jpg");
+    }
+
+    .forensic-audit{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/projects/audit-service.jpg");
+    }
+    .ghana-police-service-training{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/projects/ghana-police-service-training.jpg");
+    }
+    .project-details{
+        padding: 15px;
+
+        .project-brief{
+            color: rgb(167, 161, 161);
+            font-size: 24px;
+            font-family: var(--font-two);
+            margin-bottom: 20px;
+        }
+        .project-date{
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.76);
+            margin-bottom: 20px;
+        }
+        button{
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0,.8 );
+        }
+    }
+    
+}
+.footer{
+    min-height: 200px;
+    margin-top: 120px;
+    
+    .contact-box{
+        border: 1px solid var(--yellow);
+        min-height: inherit;
+        margin-top: 100px;
+        position: relative;
+        background-color: var(--yellow);
+
+        .contact-form{
+            background-color: var(--black);
+            min-height: 10px;
+            width: 75%;
+            margin: auto 10%;
+            margin-top: -4rem;
+            border-radius: 10px;
+            position: inherit;
+
+            .contact-icon-cover{
+                position: absolute;
+                top: -2rem;
+                left:4rem;
+                transform: rotate(25deg);  
+              }
+        .contact-form-descrption{
+            padding: 4rem;
+            display: flex;
+            justify-content: space-evenly;
+
+            h4{
+                color: white;
+                font-family: var(--font-two);
+                font-size: 2rem;
+            }
+            button{
+                border-radius: 40px;
+                padding: 0.7rem;
+                border:1px solid var(--yellow);
+                background-color: var(--yellow);
+                color: var(--black);
+                font-weight: bold;
+                transition: all 0.3s ease-in-out;
+            }
+
+            button:hover{
+                background-color: black;
+                color: var(--yellow);
+            }
+        }
+        
+        }
+        .contact-feathers-icon{
+            stroke:var(--yellow);
+            margin: auto 20%;
+            top: 5px;
+            height: 50px;
+            width:50px;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            z-index: 99;
+            transform: rotate(5deg);
+        }
+        
+    }
+}

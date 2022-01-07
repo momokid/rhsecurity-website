@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Cutive&family=Josefin+Sans:wght@300&display=swap");
+:root {
+  --yellow: #d28a05;
+  --black:#000;
+  --font-one: 'Cutive',sans-serif;
+  --font-two:'Averia Libre';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--yellow);
+  font-family: var(--font-one);
+}
+
+.sm-text {
+  font-size: 12px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/hero/hero-3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/hero/hero-3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  height: 60px;
+}
+
+.feathers-icon {
+  color: var(--black);
+  height: 17px;
+  stroke: var(--black);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.logo img {
+  height: inherit;
+}
+
+.navigation {
+  padding-top: 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hero {
+  padding: 80px;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.hero h1 {
+  margin-top: 13%;
+}
+
+.section {
+  min-height: 500px;
+  padding: 5rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto 10%;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.section-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1.5rem;
+  padding: 0 10px;
+}
+
+.section-title h3 {
+  font-size: 30px;
+  color: var(--black);
+  font-weight: bold;
+  border-bottom: 5px solid var(--yellow);
+  padding: 0 0 .5rem 0;
+}
+
+.feature {
+  width: 33%;
+  text-align: center;
+  border: 1px solid rgba(7, 24, 46, 0.1);
+  padding-bottom: 10px;
+  margin: 0 10px;
+}
+
+.feature:hover {
+  -webkit-box-shadow: 5px 5px 5px rgba(131, 128, 128, 0.212);
+          box-shadow: 5px 5px 5px rgba(131, 128, 128, 0.212);
+}
+
+.feature-head {
+  margin-top: 10px;
+}
+
+.feature-head h3 {
+  font-family: var(--font-two);
+}
+
+.feature-item {
+  padding: 20px;
+}
+
+.feature-item p {
+  font-size: 12px;
+  color: var(--black);
+}
+
+.recent-projects {
+  border-top: 1px solid rgba(7, 24, 46, 0.1);
+  background-color: var(--black);
+}
+
+.recent-projects h3 {
+  color: white;
+}
+
+.recent-projects .section-title {
+  margin-bottom: 40px;
+}
+
+.project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid rgba(7, 24, 46, 0.8);
+  margin-bottom: 20px;
+  background-color: #80808038;
+  border-radius: 0px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.project-list .project-image {
+  height: 180px;
+  background-color: yellow;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-list .project-image h5 {
+  color: white;
+  font-weight: normal;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.project-list .pentesting {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/projects/pentesting.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/projects/pentesting.jpg");
+}
+
+.project-list .forensic-audit {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/projects/audit-service.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/projects/audit-service.jpg");
+}
+
+.project-list .ghana-police-service-training {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/projects/ghana-police-service-training.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/projects/ghana-police-service-training.jpg");
+}
+
+.project-list .project-details {
+  padding: 15px;
+}
+
+.project-list .project-details .project-brief {
+  color: #a7a1a1;
+  font-size: 24px;
+  font-family: var(--font-two);
+  margin-bottom: 20px;
+}
+
+.project-list .project-details .project-date {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.76);
+  margin-bottom: 20px;
+}
+
+.project-list .project-details button {
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+  min-height: 200px;
+  margin-top: 120px;
+}
+
+.footer .contact-box {
+  border: 1px solid var(--yellow);
+  min-height: inherit;
+  margin-top: 100px;
+  position: relative;
+  background-color: var(--yellow);
+}
+
+.footer .contact-box .contact-form {
+  background-color: var(--black);
+  min-height: 10px;
+  width: 75%;
+  margin: auto 10%;
+  margin-top: -4rem;
+  border-radius: 10px;
+  position: inherit;
+}
+
+.footer .contact-box .contact-form .contact-icon-cover {
+  position: absolute;
+  top: -2rem;
+  left: 4rem;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.footer .contact-box .contact-form .contact-form-descrption {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .contact-box .contact-form .contact-form-descrption h4 {
+  color: white;
+  font-family: var(--font-two);
+  font-size: 2rem;
+}
+
+.footer .contact-box .contact-form .contact-form-descrption button {
+  border-radius: 40px;
+  padding: 0.7rem;
+  border: 1px solid var(--yellow);
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .contact-box .contact-form .contact-form-descrption button:hover {
+  background-color: black;
+  color: var(--yellow);
+}
+
+.footer .contact-box .contact-feathers-icon {
+  stroke: var(--yellow);
+  margin: auto 20%;
+  top: 5px;
+  height: 50px;
+  width: 50px;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  z-index: 99;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+/*# sourceMappingURL=style.css.map */
