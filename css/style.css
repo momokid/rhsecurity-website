@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Cutive&family=Josefin+Sans:wght@300&display=swap");
 :root {
   --yellow: #d28a05;
-  --black:#000;
-  --font-one: 'Cutive',sans-serif;
-  --font-two:'Averia Libre';
+  --black: #000;
+  --font-one: "Cutive", sans-serif;
+  --font-two: "Averia Libre";
 }
 
 * {
@@ -156,7 +156,7 @@ h1 {
   color: var(--black);
   font-weight: bold;
   border-bottom: 5px solid var(--yellow);
-  padding: 0 0 .5rem 0;
+  padding: 0 0 0.5rem 0;
 }
 
 .feature {
@@ -281,7 +281,7 @@ h1 {
 }
 
 .footer {
-  min-height: 200px;
+  min-height: 150px;
   margin-top: 120px;
 }
 
@@ -307,8 +307,8 @@ h1 {
   position: absolute;
   top: -2rem;
   left: 4rem;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
 }
 
 .footer .contact-box .contact-form .contact-form-descrption {
@@ -356,5 +356,33 @@ h1 {
   z-index: 99;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
+}
+
+.footer .footer-company-details {
+  background-color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  padding: 10px 0 25px 10px;
+}
+
+.footer .footer-company-details .company-footer-logo {
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer .footer-company-details p {
+  color: white;
+  font-size: 15px;
+  padding-left: 10px;
+  font-family: var(--font-two);
 }
 /*# sourceMappingURL=style.css.map */
