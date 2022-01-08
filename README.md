@@ -1,2 +1,2 @@
-# Website Template using HTML, SASS and Node
-Website template using HTML, SASS and Node
+# Website Template using HTML and SCSS
+Website template using HTML and SCSS
